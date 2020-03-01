@@ -1,10 +1,10 @@
-#NodeBlog
+# NodeBlog
 
-##Initialize
+## Initialize
 `$ npm install`
 
-##Server
+## Server
 `$ node app.js`
 
-##URL
+## URL
 Home: "http://localhost:3000/"
