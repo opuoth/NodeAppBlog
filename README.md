@@ -1,14 +1,14 @@
 # NodeBlog
 
-## Enviroment
+### Enviroment
 *node v13.1.0*  
 *npm v6.13.6*
 
-## Initialize
+### Initialize
 `$ npm install`
 
-## Server
+### Server
 `$ node app.js`
 
-## URL
+### URL
 Home: "http://localhost:3000/"
