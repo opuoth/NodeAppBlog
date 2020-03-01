@@ -1,7 +1,7 @@
 # NodeBlog
 
 ## Enviroment
-*node v13.1.0* 
+*node v13.1.0*  
 *npm v6.13.6*
 
 ## Initialize
