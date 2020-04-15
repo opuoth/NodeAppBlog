@@ -11,3 +11,65 @@
 [2020-03-20T22:46:01.998] [ERROR] system - Cannot read property 'isLevelEnabled' of undefined
 [2020-03-20T22:46:12.616] [ERROR] system - Cannot read property 'isLevelEnabled' of undefined
 [2020-03-20T22:52:36.675] [ERROR] system - Cannot read property 'isLevelEnabled' of undefined
+[2020-04-15T01:11:47.891] [ERROR] system - Cannot read property 'isLevelEnabled' of undefined
+[2020-04-15T13:13:17.295] [ERROR] system - Cannot read property 'isLevelEnabled' of undefined
+[2020-04-15T16:00:34.243] [ERROR] system - Cannot read property 'isLevelEnabled' of undefined
+[2020-04-15T16:05:07.620] [ERROR] system - Cannot read property 'isLevelEnabled' of undefined
+[2020-04-15T16:27:31.765] [ERROR] system - Cannot read property 'isLevelEnabled' of undefined
+[2020-04-15T16:28:04.968] [ERROR] system - MongoClient.connection is not a function
+[2020-04-15T16:30:45.620] [ERROR] system - Failed to lookup view "../search/list.ejs" in views directory "/Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views"
+[2020-04-15T16:32:34.972] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/posts/index.ejs:20
+    18| 
+    19|       <div class="border-bottom mt-5 mb-5">
+ >> 20|         <h1><%= title %></h1>
+    21|       </div>
+    22|       <dl class="row mt-5 mb-5">
+    23|         <dt class="col-3">公開日:</dt>
+
+title is not defined
+[2020-04-15T16:33:43.797] [ERROR] system - Failed to lookup view "../search/list.ejs" in views directory "/Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views"
+[2020-04-15T16:39:41.842] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/posts/index.ejs:20
+    18| 
+    19|       <div class="border-bottom mt-5 mb-5">
+ >> 20|         <h1><%= title %></h1>
+    21|       </div>
+    22|       <dl class="row mt-5 mb-5">
+    23|         <dt class="col-3">公開日:</dt>
+
+title is not defined
+[2020-04-15T16:40:16.717] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/posts/index.ejs:20
+    18| 
+    19|       <div class="border-bottom mt-5 mb-5">
+ >> 20|         <h1><%= title %></h1>
+    21|       </div>
+    22|       <dl class="row mt-5 mb-5">
+    23|         <dt class="col-3">公開日:</dt>
+
+title is not defined
+[2020-04-15T16:40:35.297] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/posts/index.ejs:20
+    18| 
+    19|       <div class="border-bottom mt-5 mb-5">
+ >> 20|         <h1><%= title %></h1>
+    21|       </div>
+    22|       <dl class="row mt-5 mb-5">
+    23|         <dt class="col-3">公開日:</dt>
+
+title is not defined
+[2020-04-15T16:40:56.268] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/posts/index.ejs:20
+    18| 
+    19|       <div class="border-bottom mt-5 mb-5">
+ >> 20|         <h1><%= title %></h1>
+    21|       </div>
+    22|       <dl class="row mt-5 mb-5">
+    23|         <dt class="col-3">公開日:</dt>
+
+title is not defined
+[2020-04-15T16:41:31.200] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/posts/index.ejs:20
+    18| 
+    19|       <div class="border-bottom mt-5 mb-5">
+ >> 20|         <h1><%= title %></h1>
+    21|       </div>
+    22|       <dl class="row mt-5 mb-5">
+    23|         <dt class="col-3">公開日:</dt>
+
+title is not defined
