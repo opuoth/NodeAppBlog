@@ -1,6 +1,7 @@
 var accesslogger = require("./lib/log/accesslogger");
 var systemlogger = require("./lib/log/systemlogger");
 var express = require("express");
+var bodyParser = require("body-parser");
 var app = express();
 
 app.set("view engine", "ejs");
