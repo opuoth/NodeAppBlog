@@ -73,3 +73,8 @@ title is not defined
     23|         <dt class="col-3">公開日:</dt>
 
 title is not defined
+[2020-04-17T15:44:35.517] [ERROR] system - Unexpected token ':' in /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/search/list.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
