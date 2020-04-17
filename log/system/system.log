@@ -78,3 +78,12 @@ title is not defined
 If the above error is not helpful, you may want to try EJS-Lint:
 https://github.com/RyanZim/EJS-Lint
 Or, if you meant to create an async function, pass `async: true` as an option.
+[2020-04-17T16:37:08.287] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/account/index.ejs:20
+    18| 
+    19|       <div class="border-bottom mt-5 mb-5">
+ >> 20|         <h1><%= title %></h1>
+    21|       </div>
+    22|       <dl class="row mt-5 mb-5">
+    23|         <dt class="col-3">公開日:</dt>
+
+title is not defined

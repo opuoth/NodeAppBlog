@@ -16,6 +16,8 @@ app.use("/posts/", require("./routes/posts.js"));
 
 app.use("/search/", require("./routes/search.js"));
 
+app.use("/account/", require("./routes/account.js"));
+
 app.use(systemlogger());
 
 app.listen(3000);
