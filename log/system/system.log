@@ -90,3 +90,48 @@ title is not defined
 [2020-04-17T20:13:34.781] [ERROR] system - Failed to lookup view "./account/posts/regist-form.ejs" in views directory "/Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views"
 [2020-04-17T20:14:54.118] [ERROR] system - Failed to lookup view "./account/posts/regist-form.ejs" in views directory "/Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views"
 [2020-04-17T20:14:54.792] [ERROR] system - Failed to lookup view "./account/posts/regist-form.ejs" in views directory "/Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views"
+[2020-04-17T23:55:30.732] [ERROR] system - Cannot read property 'url' of undefined
+[2020-04-18T00:28:24.040] [ERROR] system - Cannot read property 'url' of undefined
+[2020-04-18T00:28:41.059] [ERROR] system - Cannot read property 'url' of undefined
+[2020-04-18T01:20:43.385] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/account/posts/regist-form.ejs:26
+    24|           <label for="url" class="col-sm-2 col-form-label">URL:</label>
+    25|           <div class="col-sm-10">
+ >> 26|             <input type="text" readonly class="form-control-plaintext" id="url" name="url" value="<%= original.url %>" />
+    27|           </div>
+    28|         </div>
+    29|         <div class="form-group row">
+
+original is not defined
+[2020-04-18T01:21:46.636] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/account/posts/regist-form.ejs:26
+    24|           <label for="url" class="col-sm-2 col-form-label">URL:</label>
+    25|           <div class="col-sm-10">
+ >> 26|             <input type="text" readonly class="form-control-plaintext" id="url" name="url" value="<%= original.url %>" />
+    27|           </div>
+    28|         </div>
+    29|         <div class="form-group row">
+
+original is not defined
+[2020-04-18T01:21:47.293] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/account/posts/regist-form.ejs:26
+    24|           <label for="url" class="col-sm-2 col-form-label">URL:</label>
+    25|           <div class="col-sm-10">
+ >> 26|             <input type="text" readonly class="form-control-plaintext" id="url" name="url" value="<%= original.url %>" />
+    27|           </div>
+    28|         </div>
+    29|         <div class="form-group row">
+
+original is not defined
+[2020-04-18T01:21:47.500] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/account/posts/regist-form.ejs:26
+    24|           <label for="url" class="col-sm-2 col-form-label">URL:</label>
+    25|           <div class="col-sm-10">
+ >> 26|             <input type="text" readonly class="form-control-plaintext" id="url" name="url" value="<%= original.url %>" />
+    27|           </div>
+    28|         </div>
+    29|         <div class="form-group row">
+
+original is not defined
+[2020-04-18T01:59:17.997] [ERROR] system - Cannot read property 'url' of undefined
+[2020-04-18T02:07:26.706] [ERROR] system - Cannot read property 'title' of undefined
+[2020-04-18T02:07:53.017] [ERROR] system - Cannot read property 'url' of undefined
+[2020-04-18T02:08:21.191] [ERROR] system - Cannot read property 'url' of undefined
+[2020-04-18T02:09:45.496] [ERROR] system - Cannot read property 'url' of undefined
+[2020-04-18T02:14:09.102] [ERROR] system - Cannot read property 'url' of undefined
