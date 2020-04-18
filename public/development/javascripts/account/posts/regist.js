@@ -4,6 +4,8 @@ var btnSubmit_onclick = function (event) {
   $form.attr("method", $submit.data("method"));
   $form.attr("action", $submit.data("action"));
   $form.submit();
+  $submit.off().prop("disabled", true);
+  $form.on("submit", false);
 };
 
 var document_onready = function (event) {
