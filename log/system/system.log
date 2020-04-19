@@ -137,3 +137,4 @@ original is not defined
 [2020-04-18T02:14:09.102] [ERROR] system - Cannot read property 'url' of undefined
 [2020-04-18T22:35:23.351] [ERROR] system - Invalid Token.
 [2020-04-19T03:30:12.593] [ERROR] system - Invalid Token.
+[2020-04-19T15:46:36.975] [ERROR] system - Unknown authentication strategy "local-strategy"

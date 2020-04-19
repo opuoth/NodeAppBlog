@@ -1,4 +1,5 @@
 var { CONNECTION_URL, OPTIONS, DATABSE } = require("../config/mongodb.config");
+var { authenticate } = require("../lib/security/accountcontrol.js");
 var router = require("express").Router();
 var MongoClient = require("mongodb").MongoClient;
 var tokens = new require("csrf")();
@@ -32,13 +33,27 @@ var validateRegistData = function(body) {
     isValidated = false;
     errors.title = "タイトルが未入力です。任意のタイトルを入力してください。";
   }
-
+  
   return isValidated ? undefined : errors;
 };
 
-router.get("/", (req, res) => {
+router.get("/", (req, res, next) => {
+  if(req.isAuthenticated()) {
+    next();
+  } else {
+    res.redirect("/account/login");
+  }
+}, (req, res) => {
   res.render("./account/index.ejs");
 });
+
+//ログイン画面
+router.get("/login", (req, res) => {
+  res.render("./account/login.ejs", { message: req.flash("message") });
+});
+
+//ログイン処理
+router.post("/login", authenticate());
 
 router.get("/posts/regist", (req, res) => {
   tokens.secret((error, secret) => {
@@ -69,11 +84,11 @@ router.post("/posts/regist/confirm", (req, res) => {
 router.post("/posts/regist/execute", (req, res) => {
   var secret = req.session._csrf;
   var token = req.cookies._csrf;
-
+  
   if(tokens.verify(secret, token) === false) {
     throw new Error("Invalid Token.");
   }
-
+  
   var original = createRegistData(req.body);
   var errors = validateRegistData(req.body);
   if (errors) {
@@ -97,6 +112,7 @@ router.post("/posts/regist/execute", (req, res) => {
   });
 });
 
+//登録完了画面
 router.get("/posts/regist/complete", (req, res) => {
   res.render("./account/posts/regist-complete.ejs");
 });
