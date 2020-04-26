@@ -16,15 +16,32 @@
 
     <main role="main" class="container">
 
-      <div class="border-bottom mt-5 mb-5">
-        <h1><%= user.name %></h1>
+      <div class="float-right">
+        <span class="badge badge-secondary"><%= count %> 件</span>
       </div>
+
+      <div class="border-bottom mt-5 mb-5">
+        <h1><%= currentUser.name %></h1>
+      </div>
+
 
       <div class="mt-5 mb-5">
         <% for (var item of list) { %>
         <%- include("../search/item.ejs", item)%>
         <% } %>
       </div>
+
+      <nav>
+        <ul class="pagination">
+          <% for (i = 1; i <= pagination.max; i++) { %>
+            <% if (pagination.current !== i) { %>
+            <li class="page-item"><a class="page-link" href="/users/<%= currentUser.email %>/?page=<%= i %>"><%= i %></a></li>
+            <% } else { %>
+            <li class="page-item active"><span class="page-link disabled"><%= i %></span></li>
+            <% } %>
+          <% } %>
+        </ul>
+      </nav>
 
     </main>
 

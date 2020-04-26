@@ -587,3 +587,319 @@ Could not find the include file "./item.ejs"
     28| 
 
 Could not find the include file "./item.ejs"
+[2020-04-26T18:34:32.777] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/account/posts/regist-form.ejs:60
+    58|         <div class="form-group row">
+    59|           <div class="col-sm-10">
+ >> 60|             <input type="hidden" class="form-control" id="authors" name="authors" value="<%= loginName %>" />
+    61|           </div>
+    62|         </div>
+    63|         <div class="form-group row">
+
+loginName is not defined
+[2020-04-26T19:00:24.578] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/search/list.ejs:20
+    18| 
+    19|       <div class="float-right">
+ >> 20|         <span class="badge badge-secondary"><%= count %> 件</span>
+    21|       </div>
+    22| 
+    23|       <form class="form-inline mt-5 mb-5" method="GET" action="/search">
+
+count is not defined
+[2020-04-26T19:00:59.281] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/list.ejs:20
+    18| 
+    19|       <div class="float-right">
+ >> 20|         <span class="badge badge-secondary"><%= count %> 件</span>
+    21|       </div>
+    22| 
+    23|       <form class="form-inline mt-5 mb-5" method="GET" action="/users/index">
+
+count is not defined
+[2020-04-26T19:01:26.567] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T19:12:39.455] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:33
+    31|           <% for (i = 1; i <= pagination.max; i++) { %>
+    32|             <% if (pagination.current !== i) { %>
+ >> 33|             <li class="page-item"><a class="page-link" href="/search/?keyword=<%= keyword %>&page=<%= i %>"><%= i %></a></li>
+    34|             <% } else { %>
+    35|             <li class="page-item active"><span class="page-link disabled"><%= i %></span></li>
+    36|             <% } %>
+
+keyword is not defined
+[2020-04-26T19:24:02.149] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T19:24:15.914] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T19:24:49.605] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T19:25:16.999] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T19:27:43.574] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T19:30:54.601] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T19:34:17.453] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T19:35:41.618] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T19:36:02.968] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T19:36:50.021] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T20:02:18.078] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T20:02:41.392] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T20:03:06.391] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T20:20:19.659] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-26T20:20:20.459] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T00:05:18.106] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T00:08:29.420] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T00:09:12.292] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T00:10:42.037] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T00:30:34.383] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T00:35:38.665] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T00:36:08.228] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T00:36:36.342] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T00:36:41.982] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T00:37:01.343] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T00:37:24.388] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T00:37:38.769] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T00:38:02.007] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T00:40:13.751] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="mt-5 mb-5">
+ >> 24|         <% for (var item of list) { %>
+    25|         <%- include("../search/item.ejs", item)%>
+    26|         <% } %>
+    27|       </div>
+
+list is not iterable
+[2020-04-27T01:24:59.732] [ERROR] system - currentUser is not defined
+[2020-04-27T01:38:20.598] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/users/show.ejs:24
+    22| 
+    23|       <div class="float-right">
+ >> 24|         <span class="badge badge-secondary"><%= count %> 件</span>
+    25|       </div>
+    26| 
+    27|       <div class="mt-5 mb-5">
+
+count is not defined

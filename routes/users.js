@@ -1,4 +1,5 @@
 var { CONNECTION_URL, OPTIONS, DATABSE } = require("../config/mongodb.config");
+var { MAX_ITEM_PER_PAGE } = require("../config/app.config").search;
 var { authenticate, authorize } = require("../lib/security/accountcontrol.js");
 var { MAX_ITEM_PER_PAGE } = require("../config/app.config").search;
 var router = require("express").Router();
@@ -44,28 +45,34 @@ router.get("/index", (req, res) => {
   });
 });
 
-router.get("/:email", (req, res) => {
-  var email = req.params.email;
-  MongoClient.connect( CONNECTION_URL, OPTIONS, (error, client) => {
-    var db = client.db(DATABSE);
-  
-    db.collection("users")
-      .findOne({email: email}
-    )
-    .then((user)=>{
-      db.collection("posts")
-        .find({authors: user.name})
-        .sort({ published: -1 })
-        .toArray((error, posts) =>{
-          var data = {user: user, list: posts};
-          res.render("./users/show.ejs", data);
-        })
-    }).catch((error)=>{
-      throw error;
-    }).then(()=>{
-      client.close();
-    });
-  });
+router.get("/:email", async (req, res) => {
+  var client = await MongoClient.connect(CONNECTION_URL, OPTIONS);
+  var db = client.db(DATABSE);
+  var currentUser = await db.collection("users").findOne({email: req.params.email});
+  var page = req.query.page ? parseInt(req.query.page) : 1;
+  var query = {authors: currentUser.name};
+  Promise.all([
+    await db.collection("posts").find(query).count(),
+    db.collection("posts").find(query).sort({ published: -1 })
+      .skip( (page - 1) * MAX_ITEM_PER_PAGE)
+      .limit(MAX_ITEM_PER_PAGE)
+      .toArray()
+  ]).then((results)=>{
+    var data = {
+      currentUser: currentUser,
+      list: results[1],
+      pagination: {
+        max: Math.ceil( results[0]/ MAX_ITEM_PER_PAGE),
+        current: page
+      },
+      count: results[0]
+    };
+    res.render("./users/show.ejs", data);
+  }).catch((error)=>{
+    throw error;
+  }).then(()=>{
+    client.close();
+  })
 });
 
 module.exports = router;

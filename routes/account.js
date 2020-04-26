@@ -64,7 +64,7 @@ router.get("/posts/regist", authorize("readWrite"), (req, res) => {
       .then((currentUser)=>{
         req.session._csrf = secret;
         res.cookie("_csrf", token);
-        res.render("./account/posts/regist-form.ejs", {loginName: currentUser.name});
+        res.render("./account/posts/regist-form.ejs",{original:  {authors: currentUser.name}});
       }).catch((error)=>{
         throw error;
       }).then(()=>{
