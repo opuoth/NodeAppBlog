@@ -57,9 +57,20 @@ router.post("/logout", (req, res) => {
 router.get("/posts/regist", authorize("readWrite"), (req, res) => {
   tokens.secret((error, secret) => {
     var token = tokens.create(secret);
-    req.session._csrf = secret;
-    res.cookie("_csrf", token);
-    res.render("./account/posts/regist-form.ejs")
+    MongoClient.connect(CONNECTION_URL, OPTIONS, (error, client)=>{
+      var db = client.db(DATABSE);
+      db.collection("users")
+        .findOne({email: req.session.passport.user})
+      .then((currentUser)=>{
+        req.session._csrf = secret;
+        res.cookie("_csrf", token);
+        res.render("./account/posts/regist-form.ejs", {loginName: currentUser.name});
+      }).catch((error)=>{
+        throw error;
+      }).then(()=>{
+        client.close();
+      })
+    });
   });
 });
 

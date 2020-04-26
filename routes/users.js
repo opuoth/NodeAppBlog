@@ -54,7 +54,7 @@ router.get("/:email", (req, res) => {
     )
     .then((user)=>{
       db.collection("posts")
-        .find({authors: [user.name]})
+        .find({authors: user.name})
         .sort({ published: -1 })
         .toArray((error, posts) =>{
           var data = {user: user, list: posts};
