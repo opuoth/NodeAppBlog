@@ -1,0 +1,7 @@
+[2020-04-25T21:53:27.631] [ERROR] access - ::1 - - "GET /favicon.ico HTTP/1.1" 404 1643 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36"
+[2020-04-25T22:23:51.788] [ERROR] access - ::1 - - "GET /account/1 HTTP/1.1" 500 3971 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36"
+[2020-04-25T22:24:27.249] [ERROR] access - ::1 - - "GET /account/1 HTTP/1.1" 500 3971 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36"
+[2020-04-25T22:24:32.443] [ERROR] access - ::1 - - "GET /account/1 HTTP/1.1" 500 3971 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36"
+[2020-04-25T22:24:34.562] [ERROR] access - ::1 - - "GET /account/1 HTTP/1.1" 500 3971 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36"
+[2020-04-25T22:24:50.064] [ERROR] access - ::1 - - "GET /account/1 HTTP/1.1" 500 3963 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36"
+[2020-04-25T22:24:52.809] [ERROR] access - ::1 - - "GET /account/1 HTTP/1.1" 500 3963 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36"
