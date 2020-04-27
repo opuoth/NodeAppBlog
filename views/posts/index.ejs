@@ -28,12 +28,15 @@
         <dd class="col-9"><%= post.keywords %></dd>
       </dl>
       <p class="lead"><%= post.content %></p>
+      
       <div class="form-group row">
         <div class="col-sm-2">
           <a href="/posts/edit<%= post.url %>" class="btn btn-primary">編集</a>
         </div>
         <div class="col-sm-2">
-          <a href="#" class="btn btn-secondary">削除</a>
+          <form method="POST" action="/posts/delete<%= post.url %>">
+            <input type="submit" value="削除" class="btn btn-secondary">
+            </form>
         </div>
       </div>
 

@@ -105,7 +105,28 @@ router.post("/regist/execute/:path", (req, res) => {
 });
 
 router.get("/regist/complete", (req, res) => {
-  res.render("./account/posts/regist-complete.ejs");
+  res.render("./public/message.ejs",{title:"記事編集", message: "編集しました"});
+});
+
+router.get("/regist/delete", (req, res) => {
+  res.render("./public/message.ejs",{title:"記事削除", message: "削除しました"});
+});
+
+router.post("/delete/:path", (req, res) => {
+  var url = '/' + req.params.path;
+  MongoClient.connect(CONNECTION_URL, OPTIONS, (error, client) => {
+    var query = {url: url};
+    var db = client.db(DATABSE);
+    db.collection("posts")
+      .deleteOne(query)
+      .then(() => {
+        res.redirect("/posts/regist/delete");
+      }).catch((error) => {
+        throw error;
+      }).then(() => {
+        client.close();
+      });
+  });
 });
 
 router.get("/*", (req, res) => {

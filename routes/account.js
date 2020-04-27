@@ -124,7 +124,7 @@ router.post("/posts/regist/execute", authorize("readWrite"), (req, res) => {
 
 //登録完了画面
 router.get("/posts/regist/complete", authorize("readWrite"), (req, res) => {
-  res.render("./account/posts/regist-complete.ejs");
+  res.render("./public/message.ejs",{title: "新規記事登録", message: "登録完了"});
 });
 
 module.exports = router;

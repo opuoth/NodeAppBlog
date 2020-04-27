@@ -935,3 +935,12 @@ post is not defined
 [2020-04-27T22:23:04.830] [ERROR] system - tokens is not defined
 [2020-04-27T22:23:49.250] [ERROR] system - Invalid Token.
 [2020-04-27T22:26:41.562] [ERROR] system - Invalid Token.
+[2020-04-27T23:19:50.936] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/public/message.ejs:10
+    8|   <title><%= title %></title>
+    9| 
+ >> 10|   <%- include("../../_share/stylesheets.ejs") %>
+    11| </head>
+    12| 
+    13| <body>
+
+Could not find the include file "../../_share/stylesheets.ejs"
