@@ -903,3 +903,35 @@ list is not iterable
     27|       <div class="mt-5 mb-5">
 
 count is not defined
+[2020-04-27T12:35:57.425] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/posts/index.ejs:20
+    18| 
+    19|       <div class="border-bottom mt-5 mb-5">
+ >> 20|         <h1><%= title %></h1>
+    21|       </div>
+    22|       <dl class="row mt-5 mb-5">
+    23|         <dt class="col-3">公開日:</dt>
+
+title is not defined
+[2020-04-27T12:36:40.123] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/posts/index.ejs:20
+    18| 
+    19|       <div class="border-bottom mt-5 mb-5">
+ >> 20|         <h1><%= post.title %></h1>
+    21|       </div>
+    22|       <dl class="row mt-5 mb-5">
+    23|         <dt class="col-3">公開日:</dt>
+
+post is not defined
+[2020-04-27T21:29:00.136] [ERROR] system - Invalid Token.
+[2020-04-27T21:54:27.193] [ERROR] system - Failed to lookup view "./posts/regist-confirm.ejs" in views directory "/Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views"
+[2020-04-27T21:58:32.670] [ERROR] system - /Users/keisuke/Desktop/JavaScript/Node/Udemy_1/WebLog/views/posts/edit.ejs:37
+    35|           <label for="url" class="col-sm-2 col-form-label">URL:</label>
+    36|           <div class="col-sm-10">
+ >> 37|             <input type="text" class="form-control <%= errors.url ? 'is-invalid' : '' %>" id="url" name="url" value="<%= post.url %>" />
+    38|           </div>
+    39|         </div>
+    40|         <div class="form-group row">
+
+post is not defined
+[2020-04-27T22:23:04.830] [ERROR] system - tokens is not defined
+[2020-04-27T22:23:49.250] [ERROR] system - Invalid Token.
+[2020-04-27T22:26:41.562] [ERROR] system - Invalid Token.

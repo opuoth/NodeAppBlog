@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Welcome Page</title>
+    <title>記事詳細</title>
 
     <%- include("../_share/stylesheets.ejs") %>
   </head>
@@ -17,17 +17,25 @@
     <main role="main" class="container">
 
       <div class="border-bottom mt-5 mb-5">
-        <h1><%= title %></h1>
+        <h1><%= post.title %></h1>
       </div>
       <dl class="row mt-5 mb-5">
         <dt class="col-3">公開日:</dt>
-        <dd class="col-9"><%= published.toLocaleString() %></dd>
+        <dd class="col-9"><%= post.published.toLocaleString() %></dd>
         <dt class="col-3">著者:</dt>
-        <dd class="col-9"><%= authors %></dd>
+        <dd class="col-9"><a href="/users/<%= postUser.email %>"><%= post.authors %></a></dd>
         <dt class="col-3">キーワード:</dt>
-        <dd class="col-9"><%= keywords %></dd>
+        <dd class="col-9"><%= post.keywords %></dd>
       </dl>
-      <p class="lead"><%= content %></p>
+      <p class="lead"><%= post.content %></p>
+      <div class="form-group row">
+        <div class="col-sm-2">
+          <a href="/posts/edit<%= post.url %>" class="btn btn-primary">編集</a>
+        </div>
+        <div class="col-sm-2">
+          <a href="#" class="btn btn-secondary">削除</a>
+        </div>
+      </div>
 
     </main>
 
